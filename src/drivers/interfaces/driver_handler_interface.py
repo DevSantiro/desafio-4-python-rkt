@@ -1,13 +1,17 @@
-from abc import ABC, abstractclassmethod
+from abc import ABC, abstractmethod
 from typing import List
 
 
 class DriverHandlerInterface(ABC):
 
-    @abstractclassmethod
+    @abstractmethod
     def standard_derivation(self, number: List[float]) -> float:
         pass
 
-    @abstractclassmethod
+    @abstractmethod
     def variance(self, number: List[float]) -> float:
+        pass
+
+    @abstractmethod
+    def mean(self, number: List[float]) -> float:
         pass
